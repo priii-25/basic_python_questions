@@ -1,4 +1,4 @@
-                                          Practical No 3:Conditional Statements
+                                          #Practical No 3:Conditional Statements
 #Q1)
 num = int(input("Enter a number: "))
 if num % 3 == 0 and num % 5 == 0:
