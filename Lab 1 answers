@@ -1,0 +1,45 @@
+                             Practical No 1: Python Installation and starting with python
+#Q1)
+# installed python
+#Q2)
+a) print("Hello Everyone !!!")
+ b) print("Hello \n World")
+ c) print("Hello \n \t World")
+ d) print("Rohit's date of birth is 12\\05\\1999")
+#Q3)
+x = "Hello"
+ print(x)
+#Q4)
+num = 4244
+pii=3.14
+strng = "Hello World!"
+boolean = True
+print(num)
+print(pii)
+print(strng)
+print(boolean)
+#Q5)
+a = "Priyanshi"
+b = "Rai"
+name = a + " " + b
+print(name)
+#Q6)
+first_name = "Priyanshi"
+last_name = "Rai"
+nickname = "Priii"
+print(first_name, "(", nickname, ")", last_name)
+#Q7)
+name = "NIKUNJ BANSAL"
+sap_id = "500069944"
+dob = "13 Oct 1999"
+address = "UPES \n \t \t Bidholi Campus"
+pincode = "248007"
+programme = "AI & ML"
+semester = "2"
+print("NAME :", name)
+print("SAP ID :", sap_id)
+print("DATE OF BIRTH :", dob)
+print("ADDRESS :", address)
+print("\t \t Pincode :", pincode)
+print("Programme :", programme)
+print("Semester :", semester)
