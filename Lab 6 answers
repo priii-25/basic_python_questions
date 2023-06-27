@@ -1,0 +1,79 @@
+                                       Practical No 6:Lists, tuples, dictionary
+#Q1)
+n = int(input("Enter the number of values: "))
+values = []
+for i in range(n):
+ value = int(input("Enter a value (between 0-3): "))
+ if value < 0 or value > 3:
+ print("Invalid value entered, please try again.")
+ continue
+ values.append(value)
+count = [0] * 4
+for value in values:
+ count[value] += 1
+for i in range(4):
+ print(f"{i}: {count[i]}")
+#Q2)
+n = int(input("Enter the number of values: "))
+values = []
+for i in range(n):
+ value = int(input(f"Enter value {i+1}: "))
+ values.append(value)
+avg = sum(values) / n
+print("Average:", avg)
+#Q3)
+n = int(input("Enter the number of students: "))
+scores = []
+for i in range(n):
+ score = int(input(f"Enter score for student {i+1}: "))
+ scores.append(score)
+scores = list(set(scores))
+scores.sort(reverse=True)
+print("Runner-up score:", scores[1])
+#Q4)
+n = int(input("Enter the number of persons: "))
+persons = {}
+for i in range(n):
+ name = input(f"Enter name of person {i+1}: ")
+ city = input(f"Enter city of person {i+1}: ")
+ persons[name] = city
+print("Names:", list(persons.keys()))
+print("Cities:", list(set(persons.values())))
+print("Person details:")
+for name, city in persons.items():
+ print(f"{name}: {city}")
+city_count = {}
+for city in persons.values():
+ city_count[city] = city_count.get(city, 0) + 1
+print("City counts:", city_count)
+#Q5)
+n = int(input("Enter the number of movies: "))
+movies = []
+for i in range(n):
+ movie = {}
+ movie["name"] = input("Enter name of movie: ")
+ movie["year"] = int(input("Enter year of release: "))
+ movie["director"] = input("Enter name of director: ")
+ movie["production_cost"] = int(input("Enter production cost: "))
+ movie["collection"] = int(input("Enter collection made: "))
+ movies.append(movie)
+# a) print all movie details
+print("All movie details:")
+for movie in movies:
+ print(movie)
+# b) display name of movies released before 2015
+print("\nMovies released before 2015:")
+for movie in movies:
+ if movie["year"] < 2015:
+ print(movie["name"])
+# c) print movies that made a profit
+print("\nMovies that made a profit:")
+for movie in movies:
+ if movie["collection"] > movie["production_cost"]:
+ print(movie["name"])
+# d) print movies directed by a particular director
+director_name = input("\nEnter name of director to search: ")
+print("Movies directed by", director_name, ":")
+for movie in movies:
+ if movie["director"] == director_name:
+ print(movie["name"])
