@@ -1,4 +1,4 @@
-                                     Practical No 8:File handling and Exception Handling
+                                     #Practical No 8:File handling and Exception Handling
 #Q1) (A)
 with open("name.txt", "r") as file:
  names = file.readlines()
