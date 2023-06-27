@@ -1,4 +1,4 @@
-                                       Practical No 6:Lists, tuples, dictionary
+                                        #Practical No 6:Lists, tuples, dictionary
 #Q1)
 n = int(input("Enter the number of values: "))
 values = []
