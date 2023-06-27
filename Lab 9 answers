@@ -1,4 +1,4 @@
-                                       Practical No 9: Classes and object
+                                        #Practical No 9: Classes and object
 #Q1)
 class Student:
  def __init__(self, name, sap_id, phy_marks, chem_marks, math_marks):
